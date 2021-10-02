@@ -3,7 +3,7 @@
 int main(){
 
     int num1, num2, num3;
-    int max;
+    int max,min;
 
     printf("enter three num");
     scanf("%d%d%d", &num1,&num2,&num3);
