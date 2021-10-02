@@ -14,12 +14,17 @@ int main(){
     {
         max = num1;
     }
+    if (num1==num2)
+    {
+        printf("both are equal");
+    }
+    
     else
     {
         max= num2;
     }
 
-    printf("maximum = %d", max);
+    printf("%d is maximum", max);
     
     
 
