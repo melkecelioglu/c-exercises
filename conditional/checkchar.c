@@ -5,6 +5,15 @@ int main(){
     char ch;
     printf("enter any character: ");
     scanf("%c", &ch);
+
+    //here are the solutions:
+
+      (ch>='a' && ch<='z') || (ch>='A' && ch<='Z') 
+        ? printf("It is ALPHABET")
+        : printf("It is NOT ALPHABET");
+
+
+    //or:
     if ((ch>='a' && ch<= 'z') || (ch >= 'A' && ch <= 'Z'))
     {
        printf("character is an ALPHABET");
