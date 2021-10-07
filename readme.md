@@ -2,3 +2,4 @@
 my c code samples almost i practice every day.
 
 since I have internship interviews for google and facebook these days (sat 9 google and 12 for facebook), i will try my best to contribute here, wish me good luck! 
+lab 2 added
