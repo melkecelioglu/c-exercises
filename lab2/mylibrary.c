@@ -1,5 +1,6 @@
 //implementasyon dosyası
 
+#include <stdio.h>
 #include "mylibrary.h"
 
 int maxTwo(int n1, int n2){

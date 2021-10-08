@@ -13,7 +13,7 @@ int isArmstrong(int number)
 
      power = lastD*lastD*lastD;
 
-    sum += power;
+     sum += power;
 
       n /= 10;
   }

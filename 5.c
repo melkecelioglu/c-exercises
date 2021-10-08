@@ -1,7 +1,23 @@
 #include <stdio.h>
-int main()
-{
-	int num1, num2;
+
+
+int main(){
+    int number;
+    int num1, num2;
+    	int sum1 = 0, sum2 = 0;
+    printf("enter two numbers");
+	scanf("%d",&num1);
+	scanf("%d",&num2);
+
+ 	if(sum1 == num1 && sum2 == num2)
+		printf("Friendly Pair");
+	else
+		printf("Not Friendly Pair");
+  return 0;
+  }
+
+
+int friendly(int num1, int num2) {
 	scanf("%d",&num1);
 	scanf("%d",&num2);
 	int sum1 = 0, sum2 = 0;
