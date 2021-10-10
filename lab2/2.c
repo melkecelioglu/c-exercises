@@ -2,7 +2,7 @@
 
 int isArmstrong(int number) 
 {
- int lastD = 0;
+  int lastD = 0;
   int power = 0;
   int sum = 0;
 

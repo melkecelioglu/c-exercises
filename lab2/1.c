@@ -7,12 +7,12 @@ int checkPalindrome(int number){
   while( number!=0 )
   {
      remainder = number % 10;
-     m = m*10 + remainder;
+     m = m * 10 + remainder;
      number /= 10;
   }
 
   if ( m == temp ) return 0;
-   // return 1 genelde konulur üsttekine diğerine return 0 koy
+   // return 1 genelde konulur usttekine digerine return 0 koy -zkus 8.10.21 -lab
   else return 1;
 
 
