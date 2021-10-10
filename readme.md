@@ -8,3 +8,7 @@ my library added
 lab2 added
 
 today is the day for google, ready for lift off
+
+lab 2 recap
+
+meanwhile google online coding challange was not that bad , at least for second question :) however they were good questions, liked a lot!
