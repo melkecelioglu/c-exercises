@@ -62,3 +62,7 @@ YAZMIŞ OLDUĞUNUZ KODU EDİTÖRE KOPYALAYINIZ.
 🧩
 
 And today (12,10,21) I had interviewed with Facebook for SWE Internship, was not that bad, terrifying! HAHAH I could not handle the second question obviously, time was up. First question was quiet alright. Whatever, whether the solution is ok or not, it was a great experience!
+
+
+-- excell sheet has been created and provided with details about interview and application process that I had since very first time.
+do not stop write things down.
