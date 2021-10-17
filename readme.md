@@ -69,3 +69,5 @@ do not stop write things down.
 
 
 lab3 added
+
+enum and struct workin on
