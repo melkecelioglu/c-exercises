@@ -5,7 +5,7 @@
 #include<stdio.h>  
 #include<math.h>  
   
-
+int reverse1(int num);
   
 int main()  
 {  
@@ -19,7 +19,7 @@ int main()
     if(isNegative)  
         num *= -1;  
   
-    result = reverse(num);  
+    result = reverse1(num);  
   
     if(isNegative)  
         result *= -1;  
@@ -30,10 +30,10 @@ int main()
     return 0;  
 }  
 
-int reverse(int num)  
+int reverse1(int num)  
 {  
     if(num)  
-        return( (num%10) * pow(10, (int)log10(num)) + reverse(num/10) );  
+        return( (num%10) * pow(10, (int)log10(num)) + reverse1(num/10) );  
     else  
         return 0;  
 

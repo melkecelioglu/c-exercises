@@ -8,26 +8,32 @@
 
 
 
-   #include <stdio.h>
+#include <stdio.h>
+
+int siraliMi(int m[10], int n);
+
 int main()
 {
-  int n, s[1000], a = 1, d = 1, i;
+  int n;
+  int m[10];
+  int a = 1, d = 1, i;
 
-  siraliMi(s[1000],n);
+  siraliMi(m[10],n);
 
   return 0;
 }
 
-int siraliMi(int s[1000], int n){
+int siraliMi(int s[10], int n){
 
-    int n, s[1000], a = 1, d = 1, i;
+   // int n, s[10], 
+   int a = 1, d = 1, i;
 
   scanf("%d", &n);
 
   for (i = 0; i < n; i++)
     scanf("%d", &s[i]);
 
-  i = 0;
+
 
   while ((a == 1 || d == 1) && i < n - 1) {
     if (s[i] < s[i+1])
@@ -45,9 +51,4 @@ int siraliMi(int s[1000], int n){
     printf("The array is not sorted.\n");
 
   return 0;
-}
-
-int siraliMi(){
-
-  
 }
