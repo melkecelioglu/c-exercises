@@ -1,3 +1,4 @@
+import 'package:google_signin_example/provider/google_sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_signin_example/provider/google_sign_in.dart';
@@ -15,9 +16,10 @@ class GoogleSignupButtonWidget extends StatelessWidget {
           shape: StadiumBorder(),
           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           highlightedBorderColor: Colors.black,
-          borderSide: BorderSide(color: Colors.black),
+          borderSide: BorderSide(color: Colors.grey),
+          //disabledBorderColor: Colors.pink,
           textColor: Colors.black,
-          icon: FaIcon(FontAwesomeIcons.google, color: Colors.red),
+          icon: FaIcon(FontAwesomeIcons.google, color: Colors.white),
           onPressed: () {
             final provider =
                 Provider.of<GoogleSignInProvider>(context, listen: false);

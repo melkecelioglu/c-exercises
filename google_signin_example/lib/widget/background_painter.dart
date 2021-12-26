@@ -9,21 +9,22 @@ class BackgroundPainter extends CustomPainter {
 
   BackgroundPainter()
       : bluePaint = Paint()
-          ..color = Colors.lightBlue.shade300
+          ..color = Colors.blue.shade800
           ..style = PaintingStyle.fill,
         greyPaint = Paint()
-          ..color = Colors.blueAccent
+          ..color = Colors.lightBlue.shade300
           ..style = PaintingStyle.fill,
         orangePaint = Paint()
-          ..color = Colors.orange.shade400
+          ..color = Colors.orangeAccent.shade200
           ..style = PaintingStyle.fill;
     
 
   @override
   void paint(Canvas canvas, Size size) {
+   
     paintBlue(size, canvas);
+    paintGrey(size, canvas);  
     paintOrange(size, canvas);
-    paintGrey(size, canvas);
   }
 
   void paintBlue(Size size, Canvas canvas) {
@@ -62,18 +63,15 @@ class BackgroundPainter extends CustomPainter {
     path.lineTo(0, 0);
 
     path.quadraticBezierTo(
-      size.width * 0.65,
+      size.width * 0,
       size.height * .5,
-      size.width * 0.10 ,
+      size.width * 0.25 ,
       size.height ,
     );
     
     canvas.drawPath(path, greyPaint);
   }
 
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
-    throw UnimplementedError();
-  }
+   @override
+  bool shouldRepaint(CustomPainter oldDelegate) => true;
 }

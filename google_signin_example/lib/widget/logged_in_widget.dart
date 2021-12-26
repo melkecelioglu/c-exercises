@@ -1,6 +1,6 @@
+import 'package:google_signin_example/provider/google_sign_in.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:google_signin_example/provider/google_sign_in.dart';
 import 'package:provider/provider.dart';
 
 class LoggedInWidget extends StatelessWidget {
@@ -20,20 +20,20 @@ class LoggedInWidget extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
           SizedBox(height: 8),
-          CircleAvatar(
-            maxRadius: 25,
-           // backgroundImage: NetworkImage(user.photoURL),
-          ),
+          if (user!.photoURL != null)
+            CircleAvatar(
+              maxRadius: 25,
+              backgroundImage: NetworkImage(user.photoURL!),
+            ),
+          SizedBox(height: 8),
+          if (user.displayName != null)
+            Text(
+              'Name: ' + user.displayName!,
+              style: TextStyle(color: Colors.white),
+            ),
           SizedBox(height: 8),
           Text(
-            'Name: ' ,
-           // 'Name: ' + user.displayName,
-            style: TextStyle(color: Colors.white),
-          ),
-          SizedBox(height: 8),
-          Text(
-            'Email: ' ,
-            //'Email: ' + user.email,
+            'Email: ' + user.email!,
             style: TextStyle(color: Colors.white),
           ),
           SizedBox(height: 8),
@@ -42,8 +42,13 @@ class LoggedInWidget extends StatelessWidget {
               final provider =
                   Provider.of<GoogleSignInProvider>(context, listen: false);
               provider.logout();
+             
             },
             child: Text('Logout'),
+           
+           
+            //onLongPress: m,
+            
           )
         ],
       ),
